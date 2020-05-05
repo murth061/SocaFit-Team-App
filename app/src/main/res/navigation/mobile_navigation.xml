@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.socafit.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.socafit.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.socafit.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    
+    <fragment
+        android:id="@+id/nav_findfriends"
+        android:name="com.example.socafit.ui.findfriends.FindFriendsFragment"
+        android:label="@string/menu_findfriends"
+        tools:layout="@layout/fragment_findfriends" />
+
+    <fragment
+        android:id="@+id/nav_goals"
+        android:name="com.example.socafit.ui.goals.GoalsFragment"
+        android:label="@string/menu_goals"
+        tools:layout="@layout/fragment_goals" />
+
+    <fragment
+        android:id="@+id/nav_comp"
+        android:name="com.example.socafit.ui.competitions.CompFragment"
+        android:icon="@drawable/ic_comp_icon"
+        android:label="@string/menu_comp"
+        tools:layout="@layout/fragment_comp" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.socafit.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.socafit.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

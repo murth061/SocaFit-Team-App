@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35383F">
+
+
+    <TextView
+        android:id="@+id/text_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:contentDescription="@string/menu_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/janeimg"
+        tools:srcCompat="@drawable/janeimg" />
+
+    <EditText
+        android:id="@+id/bio"
+        android:layout_width="396dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:text="Hey everyone! My name is Jane, and my primary goals when it comes to working out are all about staying healthy and being fit! I tend to go on runs 5 days out of the week, and go to my local gym  every other day. I’m looking to meet people who also love to run and don’t mind sweating it out when it comes to weights :)"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:text="Jane"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="#4F5257"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="#4F5257"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/profileLayout"
+        android:layout_width="413dp"
+        android:layout_height="287dp"
+        android:background="#4F5257"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="260dp"
+                android:layout_height="117dp"
+                app:srcCompat="@drawable/janeinfo" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="337dp"
+                android:layout_height="270dp"
+                android:text="Activity"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="160dp"
+                android:background="#4F5257"
+                android:text="Badges"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/partnerLayout"
+        android:layout_width="413dp"
+        android:layout_height="287dp"
+        android:visibility="gone"
+        android:background="#4F5257"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_charlie"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/charlie"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="178dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Charlie"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_james"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="viewJamesProfile"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/james"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="178dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="viewJamesProfile"
+                android:text="James"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_kari"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/kari"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="178dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Kari"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_mary"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/mary"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="178dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Mary"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_tom"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/tom"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="178dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Tom"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_mark"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/mark"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="177dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Mark"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_patricia"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/patricia"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="177dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Patricia"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_anthony"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/anthony"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="177dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Anthony"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_henry"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/henry"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="176dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Henry"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jane_leo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/leo"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="176dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-85dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Leo"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/activityLayout"
+        android:visibility="gone"
+        android:layout_width="413dp"
+        android:layout_height="287dp"
+        android:background="#4F5257"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-40dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jane_post1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/janeimg"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-70dp"
+                android:background="@android:color/transparent"
+                android:text="Jane"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/username3"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="-24dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:text="@janeruns"
+                android:textColor="#8AFFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="311dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:text="Set a new milestone of 5 minutes 25 seconds for the activity 1 mile run"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="453dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@android:color/transparent"
+                android:text="__________________________________________________________________"
+                android:textColor="#FFFFFF" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jane_post2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/tom"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-70dp"
+                android:background="@android:color/transparent"
+                android:text="Tom"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/username6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="-24dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:text="@soccortom"
+                android:textColor="#8AFFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:text="@string/youtube"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@android:color/transparent"
+                android:text="__________________________________________________________________"
+                android:textColor="#FFFFFF" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jane_post4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/janeimg"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-70dp"
+                android:background="@android:color/transparent"
+                android:text="Jane"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/username7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="-24dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:text="@janeruns"
+                android:textColor="#8AFFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:text="Thinking of going on my run soon, if anyone’s interested let me know!"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@android:color/transparent"
+                android:text="__________________________________________________________________"
+                android:textColor="#FFFFFF" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jane_post5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/janeimg"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-70dp"
+                android:background="@android:color/transparent"
+                android:text="Jane"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/username8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="-24dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:text="@janeruns"
+                android:textColor="#8AFFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:text="Joined a competition - Reach them Goals!"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@android:color/transparent"
+                android:text="__________________________________________________________________"
+                android:textColor="#FFFFFF" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jane_post6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/janeimg"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-70dp"
+                android:background="@android:color/transparent"
+                android:text="Jane"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/username9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="-24dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:text="@janeruns"
+                android:textColor="#8AFFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:text="Check out my new workout goals and  let me know what you guys think!"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@android:color/transparent"
+                android:text="__________________________________________________________________"
+                android:textColor="#FFFFFF" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jane_post7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/janeimg"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-70dp"
+                android:background="@android:color/transparent"
+                android:text="Jane"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/username10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="-24dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:text="@janeruns"
+                android:textColor="#8AFFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:text="I’m really excited to try this app, definitely going to stay motivated!"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-280dp"
+                android:background="@android:color/transparent"
+                android:text="__________________________________________________________________"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!--    <include layout="@layout/fragment_profile_activity"-->
+    <!--        android:id="@+id/partnerLayout"-->
+    <!--        android:visibility="gone"-->
+    <!--        />-->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="126dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/janeexperience" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="60dp"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="60dp"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star_empty" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="60dp"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star_empty" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="311dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileLayout"
+        app:srcCompat="@drawable/badges" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="106dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/janeinterest" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="450dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="160dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileLayout"
+        app:srcCompat="@drawable/badesselected" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="255dp"
+        android:layout_marginBottom="70dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/profileLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="91dp"
+        android:layout_height="94dp"
+        android:layout_marginRight="190dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/profileLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#35383F"
+        android:text="My Activity"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="#35383F"
+        android:text="My Partners"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:background="#35383F"
+        android:text="My Profile"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileUnder"
+        android:layout_width="93dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:text=" _____________"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/activityUnder"
+        android:layout_width="87dp"
+
+        android:layout_height="21dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:text="_________________"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/partnerUnder"
+        android:layout_width="120dp"
+
+        android:layout_height="21dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/transparent"
+        android:text=" ________________"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="117dp"
+        android:layout_height="20dp"
+        android:background="#35383F"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:maxLength="14"
+        android:text="@janeruns"
+        android:textColor="#8AFFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/interest"
+        android:layout_width="117dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#35383F"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:maxLength="16"
+        android:text="Running/Lifting"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="137dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="372dp"
+        android:background="#4F5257"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="June 25, 1995"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="314dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="403dp"
+        android:background="#4F5257"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Sacramento, California"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="336dp"
+        android:background="#4F5257"
+        android:ems="10"
+        android:enabled="false"
+        android:text="Female"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/experienceText"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="Competent"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

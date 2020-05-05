@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#302F34"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="8dp"
+        />
+    <TextView
+        android:id="@+id/post_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstName"
+        android:layout_toEndOf="@id/image"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/post_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/@username"
+        android:layout_toEndOf="@id/post_name"
+        android:layout_marginStart="10dp"
+        android:textStyle="normal"
+        android:textColor="@color/text"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/post_text"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginTop="5dp"
+        android:text="asdf"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/post_text"
+        android:layout_below="@id/post_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/image"
+        android:text=""
+        android:textColor="@color/heart" />
+
+    <TextView
+        android:id="@+id/liketext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/post_text"
+        android:layout_below="@id/post_name"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@id/image"
+        android:text=""
+        android:textColor="@color/text" />
+
+
+    <Button
+        android:id="@+id/reactButton"
+        android:background="@color/react"
+        android:layout_width="150dp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginTop="3dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/post_text"
+        android:text="Like" />
+
+    <Button
+        android:id="@+id/commentButton"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/post_text"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/reactButton"
+        android:background="@color/comment"
+        android:text="Comment"
+        android:textColor="@color/cardview_dark_background" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#35383F</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#302F34</color>
+    <color name="text">#F8F8FF</color>
+    <color name="react">#DFDFE6</color>
+    <color name="comment">#8383eb</color>
+    <color name="heart">#cd0e3e</color>
+</resources>

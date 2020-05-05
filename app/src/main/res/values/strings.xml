@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">SocaFit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_findfriends">Find Friends</string>
+    <string name="menu_goals"> My Goals</string>
+    <string name="menu_comp">Competitions</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="submit">Submit</string>
+    <string name="competitions_icon">competitions_icon</string>
+    <string name="textviewComp">TextViewComp</string>
+    <string name="youtube"><a href ="https://www.youtube.com/watch?v=vc1E5CfRfos">Hey guys! I found this new quarantine workout that I really like https://www.youtube.com/watch?v=vc1E5CfRfos</a></string>
+        <string name="charlie">CHARLIE</string>
+    <string name="charlie_desc">Looking to go weightlifting</string>
+    <string name="charlie_dist">1 mi</string>
+
+    <string name="james">JAMES</string>
+    <string name="james_desc">Polymerics</string>
+    <string name="james_dist">4 mi</string>
+
+    <string name="kari">KARI</string>
+    <string name="kari_desc">Looking to run in the mornings!</string>
+    <string name="kari_dist">6 mi</string>
+
+    <string name="mary">MARY</string>
+    <string name="mary_desc">Core and cardio</string>
+    <string name="mary_dist">6 mi</string>
+
+    <string name="tom">TOM</string>
+    <string name="tom_desc">Swimming and dryland</string>
+    <string name="tom_dist">12 mi</string>
+
+    <string name="mark">MARK</string>
+    <string name="mark_desc">ROCK CLIMBING!</string>
+    <string name="mark_dist">13 mi</string>
+
+    <string name="patricia">PATRICIA</string>
+    <string name="patricia_desc">Up for anything</string>
+    <string name="patricia_dist">14 mi</string>
+
+    <string name="karen">KAREN</string>
+    <string name="karen_desc">Zumba</string>
+    <string name="karen_dist">15 mi</string>
+
+    <string name="anthony">ANTHONY</string>
+    <string name="anthony_desc">Pump some iron</string>
+    <string name="anthony_dist">15 mi</string>
+
+    <string name="henry">HENRY</string>
+    <string name="henry_desc">Run laps</string>
+    <string name="henry_dist">17 mi</string>
+
+    <string name="leo">LEO</string>
+    <string name="leo_desc">Boxing</string>
+    <string name="leo_dist">25 mi</string>
+
+    <string-array name="ffDropDown">
+        <item>All</item>
+        <item>0 mi</item>
+        <item>5 mi</item>
+        <item>10 mi</item>
+        <item>15 mi</item>
+        <item>20 mi</item>
+    </string-array>
+
+    <string name="post">POST</string>
+    <string name="ffdropdownprompt">Distance</string>
+</resources>
